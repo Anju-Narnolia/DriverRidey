@@ -8,7 +8,7 @@ import Review from "./Review";
 function Header() {
     return (
         <div>
-            <div class="relative w-full h-screen overflow-hidden">
+            {/* <div class="relative w-full h-screen overflow-hidden">
                 <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover">
                     <source src="https://videocdn.cdnpk.net/videos/1d4c1162-3d5b-471d-bbdd-e175dd61539c/horizontal/previews/watermarked/large.mp4" type="video/mp4"/>
                       
@@ -20,7 +20,7 @@ function Header() {
                         Connecting people who need a ride with skilled drivers in an easy, efficient, and secure way. Whether you're looking for a ride or ready to offer your driving services, we’ve got you covered.
                     </p>
                 </div>
-            </div>
+            </div> */}
 
             <div className="w-full h-[50vh] lg:h-[80vh] relative"
                 style={{ backgroundImage: `url(${heroPhoto})`, backgroundSize: 'cover', backgroundPosition: 'center' }}

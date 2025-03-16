@@ -15,11 +15,11 @@ function NavBar() {
       <div className="flex items-center justify-between px-5 ">
         <div>
           <Link to="/">
-            <img src={logo} alt="DriverRidey Logo" className="w-full lg:h-20" />
+            <img src={logo} alt="DriverRidey Logo" className="lg:w-72 w-48 md:w-64" />
           </Link>
         </div>
-        <nav>
-          <ul className="items-center space-x-6 hidden lg:block">
+        <nav className="justify-center hidden md:flex">
+          <ul className="flex flex-row items-center space-x-6 ">
             <li className=" ">
               <Link
                 to="/"
@@ -30,7 +30,7 @@ function NavBar() {
                 Home
               </Link>
             </li>
-            <li className="  : ">
+            <li className=" ">
               <Link
                 to="/about"
                 className={`${
@@ -39,7 +39,7 @@ function NavBar() {
                     : ""
                 } "hover:text-driverGreen text-white hover:text-gray-700 transition-colors duration-200`}
               >
-                About{" "}
+                About
               </Link>
             </li>
             <li className="  : ">
@@ -51,8 +51,7 @@ function NavBar() {
                     : ""
                 } "hover:text-driverGreen text-white hover:text-gray-700 transition-colors duration-200`}
               >
-                {" "}
-                Safety{" "}
+                Safety
               </Link>
             </li>
             <li className="  : ">
@@ -64,8 +63,7 @@ function NavBar() {
                     : ""
                 } "hover:text-driverGreen text-white hover:text-gray-700 transition-colors duration-200`}
               >
-                {" "}
-                Career{" "}
+                Career
               </Link>
             </li>
             <li className="  : ">
@@ -75,7 +73,7 @@ function NavBar() {
                   location.pathname === "/faq" ? "border-b-4 border-black" : ""
                 } "hover:text-driverGreen text-white hover:text-gray-700 transition-colors duration-200`}
               >
-                FAQ{" "}
+                FAQ
               </Link>
             </li>
             <li className="  : ">
@@ -87,20 +85,21 @@ function NavBar() {
                     : ""
                 } "hover:text-driverGreen text-white hover:text-gray-700 transition-colors duration-200`}
               >
-                {" "}
                 Contact
               </Link>
             </li>
+            <li>
+              <button
+                className="bg-black block hover:bg-gray-700 text-white  :text-2xl lg:text-lg font-semibold rounded-full px-5 py-2 transition duration-200 "
+                onClick={togglePopUp}
+              >
+                {" "}
+                Download App{" "}
+              </button>
+            </li>
           </ul>
         </nav>
-        <button
-          className="bg-black block lg:hidden hover:bg-gray-700 text-white  :text-2xl lg:text-lg font-semibold rounded-full px-5 py-2 transition duration-200 "
-          onClick={togglePopUp}
-        >
-          {" "}
-          Download App{" "}
-        </button>
-        <li className=" lg:hidden block">
+        <li className=" md:hidden block">
           <SideBar />
         </li>
 
