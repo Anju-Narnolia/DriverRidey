@@ -10,15 +10,14 @@ function ContactForm() {
     }
 
     return (
-        <div className=" rounded-lg shadow-md p-6 bg-gray-200 bg-opacity-40 m-3 border-driverGreen border-2 sm:w-full">
+        <div className="rounded-lg shadow-md p-5 bg-gray-200 bg-opacity-40 border-driverGreen border-2 w-full">
             <form onSubmit={msgChange}>
-                <div className="text-center mb-6">
-                    <h2 className="text-3xl font-bold text-driverGreen">Contact Form</h2>
+                <div className="text-center mb-4">
+                    <h2 className="lg:text-3xl text-xl font-bold text-driverGreen">Contact Form</h2>
                     <p className="text-sm text-gray-800">
                         Please fill out the form below, and we'll get back to you shortly.
                     </p>
                 </div>
-
                 <div className="mb-4">
                     <label
                         htmlFor="name"
@@ -30,11 +29,10 @@ function ContactForm() {
                         id="name"
                         type="text"
                         placeholder="Your Name"
-                        className="block w-full rounded-lg border-gray-300 bg-gray-100 p-2 focus:border-blue-500 focus:ring focus:ring-blue-200"
+                        className="block w-full rounded-lg border-gray-300 bg-gray-100  p-1 lg:p-2 focus:border-blue-500 focus:ring focus:ring-blue-200"
                         required
                     />
                 </div>
-
                 <div className="mb-4">
                     <label
                         htmlFor="email"
@@ -46,7 +44,7 @@ function ContactForm() {
                         id="email"
                         type="email"
                         placeholder="Your Email"
-                        className="block w-full rounded-lg border-gray-300 bg-gray-100 p-2 focus:border-blue-500 focus:ring focus:ring-blue-200"
+                        className="block w-full rounded-lg border-gray-300 bg-gray-100 p-1 lg:p-2 focus:border-blue-500 focus:ring focus:ring-blue-200"
                         required
                     />
                 </div>
@@ -61,7 +59,7 @@ function ContactForm() {
                         id="mobile"
                         type="tel"
                         placeholder="Your Mobile Number"
-                        className="block w-full rounded-lg border-gray-300 bg-gray-100 p-2 focus:border-blue-500 focus:ring focus:ring-blue-200"
+                        className="block w-full rounded-lg border-gray-300 bg-gray-100 p-1 lg:p-2 focus:border-blue-500 focus:ring focus:ring-blue-200"
                     />
                 </div>
                 <div className="mb-4">
@@ -75,7 +73,7 @@ function ContactForm() {
                         id="subject"
                         type="text"
                         placeholder="Your Subject"
-                        className="block w-full rounded-lg border-gray-300 bg-gray-100 p-2 focus:border-blue-500 focus:ring focus:ring-blue-200"
+                        className="block w-full rounded-lg border-gray-300 bg-gray-100 p-1 lg:p-2 focus:border-driverGreen focus:ring focus:ring-driverGreen"
                     />
                 </div>
                 <div className="mb-6">
@@ -88,7 +86,7 @@ function ContactForm() {
                     <textarea
                         id="message"
                         placeholder="Write Your Message Here"
-                        className="block w-full rounded-lg border-gray-300 bg-gray-100 p-2 focus:border-blue-500 focus:ring focus:ring-blue-200 h-28 resize-none"
+                        className="block w-full rounded-lg border-gray-300 bg-gray-100 p-1 lg:p-2 focus:border-driverGreen focus:ring focus:ring-driverGreen h-28 resize-none"
                         required
                     ></textarea>
                 </div>

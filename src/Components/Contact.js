@@ -8,12 +8,15 @@ function Contact() {
         <div
           className="p-10 bg-cover bg-center"
           style={{
-            backgroundImage: `url(${contact})`,
+            background: `#f3f4f6 url(${contact}) center/cover no-repeat`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
         >
+          {/* <link rel="preload" as="image" href={contact} /> */}
           {/* Header */}
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-black p-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-black p-4">
               Contact Us
             </h1>
             <p className="text-gray-900 text-lg md:text-2xl px-5 md:px-20">
@@ -41,9 +44,8 @@ function Contact() {
             </div>
           </div>
         </div>
-
         {/* Map */}
-        <div className="px-4 sm:px-5 pb-5">
+        <div className="px-4 sm:px-5 m-5">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224357.50123586552!2d77.23701468919643!3d28.5221023514615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1738047205582!5m2!1sen!2sin"
             title="Contact Form Map"

@@ -30,7 +30,15 @@ function Review() {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                 }
-            },]
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     };
     const renderStars = (rating) => {
         const fullStars = Math.floor(rating);
@@ -54,7 +62,7 @@ function Review() {
     const [currentCategory, setCurrentCategory] = useState('driver');
     const reviews = currentCategory === 'driver' ? driverReview : ownerReviews;
     return (
-        <div className="p-10 bg-gray-200">
+        <div className="p-5 bg-gray-200">
             <div>
                 <div className="flex justify-center space-x-4 mb-4">
                     <button
@@ -70,7 +78,7 @@ function Review() {
                             <div className="flex justify-center mt-2 md:text-3xl lg:text-2xl">{renderStars(reviews.rating)}</div>
                             <h2 className="md:text-xl lg:text-lg p-3">{reviews.text}</h2>
                             <div className=" flex ">
-                                <img src={reviews.img} alt="review" className="justify-start w-20 h-20 rounded-full border-2 border-gray-400 m-2" />
+                                <img src={reviews.img} alt="review" loading="lazy" className="justify-start w-20 h-20 rounded-full border-2 border-gray-400 m-2" />
                                 <p className="font-bold font-serif text-center mt-10 px-2">{reviews.author} </p>
                             </div>
                         </div>

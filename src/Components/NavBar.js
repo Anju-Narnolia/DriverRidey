@@ -15,7 +15,7 @@ function NavBar() {
       <div className="flex items-center justify-between px-5 ">
         <div>
           <Link to="/">
-            <img src={logo} alt="DriverRidey Logo" className="lg:w-72 w-48 md:w-64" />
+            <img src={logo} alt="DriverRidey Logo" loading="lazy"className="lg:w-72 w-48 md:w-64" />
           </Link>
         </div>
         <nav className="justify-center hidden md:flex">

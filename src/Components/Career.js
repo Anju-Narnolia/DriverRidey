@@ -5,19 +5,19 @@ function Career() {
     <>
       {/* Hero Section */}
       <div
-        className="relative w-full h-[80vh] bg-gradient-to-r from-blue-500 via-teal-500 to-purple-500"
+        className="relative w-full lg:h-[80vh] bg-gradient-to-r from-blue-500 via-teal-500 to-purple-500"
         id="section1"
       >
         <img
           src={career}
           alt="career"
-          className="object-cover w-[length:200%]  opacity-85 h-full"
+                className="relative object-cover opacity-70 w-full lg:h-[80vh] md:h-[50vh]"
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-6 lg:px-10">
-          <h1 className="font-bold text-3xl  lg:text-6xl leading-tight">
+          <h1 className="font-bold text-3xl md:text-4xl lg:text-6xl leading-tight">
             Career Opportunities Await You!
           </h1>
-          <p className="font-serif text-xl lg:text-2xl mt-4 max-w-3xl mx-auto">
+          <p className="text-lg lg:text-3xl mt-4 max-w-3xl mx-auto">
             We're on a mission to innovate, inspire, and create a brighter
             future, and we know that our success is driven by the talent and
             dedication of our team.
@@ -26,13 +26,13 @@ function Career() {
       </div>
 
       {/* Form Section */}
-      <section className="flex flex-col items-center px-4 lg:px-20">
-        <div className="bg-driverGreen text-white rounded-xl w-full max-w-4xl p-8 mt-10 shadow-lg m-10">
-          <p className=" text-2xl  lg:text-3xl font-bold text-center mb-6">
+      <section className="flex flex-col items-center m-10 lg:px-20">
+        <div className="bg-driverGreen text-white rounded-xl w-full max-w-4xl p-8 mt-10 shadow-lg">
+          <p className=" text-2xl  lg:text-3xl font-bold text-center mb-2 lg:mb-6">
             Apply Now
           </p>
-          <form className="space-y-6">
-            <div className="grid grid-cols-1    lg:grid-cols-2 gap-4">
+          <form className="">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <div>
                 <label className="text-sm font-medium flex mb-1">
                   First Name <span className="text-red-600 pl-1">*</span>
@@ -40,7 +40,7 @@ function Career() {
                 <input
                   type="text"
                   placeholder="Enter Your First Name"
-                  className="w-full text-black px-4 py-2 border border-gray-300 rounded-lg focus:outline-none"
+                  className="w-full text-black px-4 py-1 lg:py-2 border border-gray-300 rounded-lg focus:outline-none"
                   required
                 />
               </div>
@@ -51,7 +51,7 @@ function Career() {
                 <input
                   type="text"
                   placeholder="Enter Your Last Name"
-                  className="w-full text-black px-4 py-2 border border-gray-300 rounded-lg focus:outline-none"
+                  className="w-full text-black px-4 py-1 lg:py-2 border border-gray-300 rounded-lg focus:outline-none"
                   required
                 />
               </div>
@@ -62,7 +62,7 @@ function Career() {
                 <input
                   type="tel"
                   placeholder="Enter Phone Number"
-                  className="w-full text-black px-4 py-2 border border-gray-300 rounded-lg focus:outline-none"
+                  className="w-full text-black px-4 py-1 lg:py-2 border border-gray-300 rounded-lg focus:outline-none"
                   required
                 />
               </div>
@@ -73,7 +73,7 @@ function Career() {
                 <input
                   type="email"
                   placeholder="Enter Your Email"
-                  className="w-full text-black px-4 py-2 border border-gray-300 rounded-lg focus:outline-none"
+                  className="w-full text-black px-4 py-1 lg:py-2 border border-gray-300 rounded-lg focus:outline-none"
                   required
                 />
               </div>
@@ -85,7 +85,7 @@ function Career() {
                 <input
                   type="text"
                   placeholder="Enter Highest Qualification"
-                  className="w-full text-black px-4 py-2 border border-gray-300 rounded-lg focus:outline-none"
+                  className="w-full text-black px-4 py-1 lg:py-2 border border-gray-300 rounded-lg focus:outline-none"
                   required
                 />
               </div>
@@ -96,7 +96,7 @@ function Career() {
                 <input
                   type="text"
                   placeholder="Applying For"
-                  className="w-full text-black px-4 py-2 border border-gray-300 rounded-lg focus:outline-none"
+                  className="w-full text-black px-4 py-1 lg:py-2 border border-gray-300 rounded-lg focus:outline-none"
                   required
                 />
               </div>
@@ -108,7 +108,7 @@ function Career() {
                 <input
                   type="text"
                   placeholder="Enter Work Experience"
-                  className="w-full text-black px-4 py-2 border border-gray-300 rounded-lg focus:outline-none"
+                  className="w-full text-black px-4 py-1 lg:py-2 border border-gray-300 rounded-lg focus:outline-none"
                   required
                 />
               </div>
@@ -117,7 +117,7 @@ function Career() {
                 <input
                   type="text"
                   placeholder="Enter Your Address"
-                  className="w-full text-black px-4 py-2 border border-gray-300 rounded-lg focus:outline-none"
+                  className="w-full text-black px-4 py-1 lg:py-2 border border-gray-300 rounded-lg focus:outline-none"
                   required
                 />
               </div>
@@ -129,7 +129,7 @@ function Career() {
               </label>
               <input
                 type="file"
-                className="w-full text-black px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none"
+                className="w-full text-black px-4 py-1 lg:py-2 bg-white border border-gray-300 rounded-lg focus:outline-none"
                 required
               />
             </div>
@@ -137,7 +137,7 @@ function Career() {
             <div className="mt-6 flex justify-center">
               <button
                 type="submit"
-                className="w-full    lg:w-1/2 bg-white text-driverGreen font-bold py-2 px-4 rounded-lg hover:bg-green-900 hover:text-white focus:outline-none"
+                className="w-full    lg:w-1/2 bg-white text-driverGreen font-bold py-1 lg:py-2 px-4 rounded-lg hover:bg-green-900 hover:text-white focus:outline-none"
               >
                 Submit
               </button>
