@@ -71,7 +71,7 @@ function Review() {
                         onClick={() => setCurrentCategory('driver')} className={`px-6 py-2 rounded-lg font-bold  md:text-xl lg:text-sm ${currentCategory === 'driver' ? 'bg-driverGreen text-white' : 'bg-white'}`}>  Driver Reviews  </button>
                 </div>
             </div>
-            <div className="m-10">
+            <div className="lg:m-10 m-3">
                 <Slider {...settings}>
                     {reviews.map((reviews) => (
                         <div key={reviews.id} className="border-driverGreen border-3 bg-white rounded-lg p-5">

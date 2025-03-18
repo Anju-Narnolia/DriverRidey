@@ -7,10 +7,10 @@ function Footer() {
 
   return (
     <>
-      <div className="bg-black text-white  p-5">
-        <div className="flex-col lg:flex-row flex justify-between p-5">
+      <div className="bg-black text-white  md:p-5">
+        <div className="flex-col lg:flex-row flex justify-between gap-2 p-8">
           {/* col1 */}
-          <div className="p-5 lg:w-1/5 flex flex-col gap-5 items-center lg:items-start">
+          <div className=" lg:w-1/5 flex flex-col lg:gap-5 items-center lg:items-start">
             <img className="w-60" src={logo} alt="logo" />
             <div>
               <p className="text-gray-300 text-lg text-center lg:text-wrap">
@@ -20,8 +20,8 @@ function Footer() {
             </div>
           </div>
           {/* cpl2 */}
-          <div className="items-center w-full lg:w-1/5 md:p-5 p-2">
-            <p className="font-bold font-serif lg:text-2xl md:text-2xl text-xl text-center mb-5">
+          <div className="items-center w-full lg:w-1/5 md:p-5">
+            <p className="font-bold font-serif lg:text-2xl md:text-2xl text-lg text-center mb-2 lg:mb-5">
               Download App
             </p>
             <div className=" flex flex-row lg:flex-col gap-10 justify-center items-center">
@@ -38,8 +38,8 @@ function Footer() {
             </div>
           </div>
           {/* col3 */}
-          <div className="p-2 md:p-5 lg:w-1/6 ">
-            <p className="font-bold mb-2 md:mb-4 text-center lg:text-2xl md:text-2xl text-xl">
+          <div className="lg:p-2 md:p-5 lg:w-1/6 ">
+            <p className="font-bold mb-2 md:mb-4 text-center lg:text-2xl md:text-2xl text-lg">
               Quick Links
             </p>
             <ul className="flex justify-center gap-3 text-md md:text-lg lg:text-xl lg:flex-col text-center">
@@ -94,8 +94,8 @@ function Footer() {
             </ul>
           </div>
           {/* col4 */}
-          <div className="lg:w-1/5 p-5  flex flex-col gap-5 items-center">
-            <p className="lg:text-2xl md:text-2xl text-xl font-bold text-white text-center lg:text-start">
+          <div className="lg:w-1/5 lg:p-5  flex flex-col  items-center">
+            <p className="lg:text-2xl md:text-2xl text-lg font-bold text-white text-center lg:text-start">
               Customer Support
             </p>
             <div className="flex flex-col gap-3">
@@ -138,14 +138,15 @@ function Footer() {
             </div>
           </div>
           {/* col 4 */}
-          <div className=" w-full lg:w-2/6  py-5 sm:items-center">
+
+          <div className=" w-full lg:w-2/6 py-2 lg:py-5 sm:items-center">
             <div className="flex gap-2 justify-center">
               <i className="fa-solid fa-envelope text-driverGreen lg:text-3xl md:text-2xl text-xl"></i>
-              <h3 className="text-xl  md:text-2xl lg:text-2xl font-bold">
+              <h3 className="text-lg md:text-2xl lg:text-2xl font-bold">
                 Subscribe To Our Newsletter
               </h3>
             </div>
-            <p className="lg:my-5  my-2  text-lg  md:text-xl lg:text-2xl text-gray-400 text-center">
+            <p className="lg:my-5 mb-2 text-md  md:text-lg lg:text-xl text-gray-400 text-center">
               Subscribe now for news, updates, and exclusive offers in your
               inbox.
             </p>
@@ -154,17 +155,17 @@ function Footer() {
                 type="email"
                 name="email"
                 placeholder="Enter email to subscribe"
-                className="px-4 py-3 rounded-s-lg text-black"
+                className=" px-2 md:px-4 lg:py-3 rounded-s-lg text-black w-3/4"
               />
               <button
-                className="bg-driverGreen text-white font-bold px-8 py-2 rounded-e-md"
+                className="bg-driverGreen text-white font-bold lg:px-8 py-2 rounded-e-md w-1/3"
                 type="submit"
                 value="Submit"
               >
                 Subscribe
               </button>
             </form>
-            <div className="flex justify-center gap-10 text-2xl md:text-3xl p-5">
+            <div className="flex justify-center gap-10 text-2xl md:text-3xl pt-4 lg:p-5">
               <Link
                 to="https://www.linkedin.com/company/driverridey/?viewAsMember=true"
                 target="blank"
@@ -187,13 +188,13 @@ function Footer() {
           </div>
           {/* mergo-mail and google sheet will used to subscription handle */}
         </div>
-        <hr className="border-gray-700" />
-        <div className="text-center p-5 gap-2 lg:flex justify-center">
-          <p className="  text-md md:text-xl lg:text-xl">
+        <hr className="border-gray-700 p-2" />
+        <div className="text-center lg:p-5 gap-2 lg:flex justify-center">
+          <p className="text-xs md:text-md lg:text-xl">
             Copyright © {year} <span className="font-bold">DriverRidey</span>.
             All rights reserved.
           </p>
-          <div className="flex flex-row text-md md:text-xl lg:text-xl underline justify-center gap-2 lg:">
+          <div className="flex flex-row text-xs md:text-md lg:text-xl underline justify-center gap-2 lg:">
             <Link to="/term-condition" className="hover:text-driverGreen">
               Terms and Conditions
             </Link>

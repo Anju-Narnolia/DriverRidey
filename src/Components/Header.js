@@ -187,51 +187,51 @@ function Header() {
       <h2 className="lg:text-5xl md:text-4xl text-3xl font-bold text-center text-gray-800 lg:mb-8 m-5">
           Our Values
         </h2>
-        <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-12 m-10 lg:m-3">
+        <div className="mt-14 grid grid-cols-2 lg:grid-cols-4 gap-9 md:gap-10 lh:m-10 lg:m-3">
           <div className=" relative bg-gray-50 p-6 rounded-xl shadow-lg border-2 border-driverGreen hover:scale-105 transform transition duration-[500ms]">
             <div className="icon-container absolute -top-8 left-1/2 transform -translate-x-1/2 bg-white rounded-full p-4 border-2 border-driverGreen px-5">
-              <i className="fa-brands fa-accessible-icon text-driverGreen hover:rotate-360 text-5xl lg:text-4xl hover:text-green-600 hover:scale-105"></i>
+              <i className="fa-brands fa-accessible-icon text-driverGreen hover:rotate-360 text-2xl lg:text-4xl hover:text-green-600 hover:scale-105"></i>
             </div>
-            <p className="text-3xl lg:text-2xl font-semibold text-gray-800 pt-8">
+            <p className="text-xl lg:text-2xl font-semibold text-gray-800 pt-8">
               Accessibility
             </p>
-            <p className="text-gray-600 mt-2 text-lg lg:text-sm">
-              We believe everyone should have access to reliable transportation
+            <p className="text-gray-600 mt-2 text-xs lg:text-sm">
+               We believe everyone should have access to reliable transportation
               options.
             </p>
           </div>
           <div className=" relative bg-gray-50 p-6 rounded-xl shadow-lg border-2 border-driverGreen hover:scale-105 transform transition duration-[500ms]">
             <div className="icon-container absolute -top-8 left-1/2 transform -translate-x-1/2 bg-white rounded-full p-4 border-2 border-driverGreen px-5">
-              <i className="fa-solid fa-people-arrows text-driverGreen hover:rotate-360 text-5xl lg:text-4xl hover:text-green-600 hover:scale-105"></i>
+              <i className="fa-solid fa-people-arrows text-driverGreen hover:rotate-360 text-2xl lg:text-4xl hover:text-green-600 hover:scale-105"></i>
             </div>
-            <p className="text-3xl lg:text-2xl font-semibold text-gray-800 pt-8">
+            <p className="text-xl lg:text-2xl font-semibold text-gray-800 pt-8">
               Community Connection
             </p>
-            <p className="text-gray-600 mt-2 text-lg lg:text-sm">
+            <p className="text-gray-600 mt-2 text-xs lg:text-sm">
               Our platform fosters relationships between car owners and drivers,
               creating a supportive travel community.
             </p>
           </div>
-          <div className=" relative bg-gray-50 p-6 rounded-xl shadow-lg border-2 border-driverGreen hover:scale-105 transform transition duration-[500ms]">
+          <div className=" relative bg-gray-50 pt-5 p-2 lg:p-6 rounded-xl shadow-lg border-2 border-driverGreen hover:scale-105 transform transition duration-[500ms]">
             <div className="icon-container absolute -top-8 left-1/2 transform -translate-x-1/2 bg-white rounded-full p-4 border-2 border-driverGreen px-5">
-              <i className="fa-solid fa-chalkboard-user text-driverGreen hover:rotate-360 text-5xl lg:text-4xl hover:text-green-600 hover:scale-105"></i>
+              <i className="fa-solid fa-chalkboard-user text-driverGreen hover:rotate-360 text-2xl lg:text-4xl hover:text-green-600 hover:scale-105"></i>
             </div>
-            <p className="text-3xl lg:text-2xl font-semibold text-gray-800 pt-8">
+            <p className="text-xl lg:text-2xl font-semibold text-gray-800 pt-8">
               User-Centric Design
             </p>
-            <p className="text-gray-600 mt-2 text-lg lg:text-sm">
-              We focus on creating a user-friendly app that caters to the
+            <p className="text-gray-600 mt-2 text-xs lg:text-sm">
+               We focus on creating a user-friendly app that caters to the
               specific needs of our users.
             </p>
           </div>
           <div className=" relative bg-gray-50 p-6 rounded-xl shadow-lg border-2 border-driverGreen hover:scale-105 transform transition duration-[500ms]">
             <div className="icon-container absolute -top-8 left-1/2 transform -translate-x-1/2 bg-white rounded-full p-4 border-2 border-driverGreen px-5">
-              <i className="fa-solid fa-user-shield text-driverGreen hover:rotate-360 text-5xl lg:text-4xl hover:text-green-600 hover:scale-105"></i>
+              <i className="fa-solid fa-user-shield text-driverGreen hover:rotate-360 text-2xl lg:text-4xl hover:text-green-600 hover:scale-105"></i>
             </div>
-            <p className="text-3xl lg:text-2xl font-semibold text-gray-800 pt-8">
+            <p className="text-xl lg:text-2xl font-semibold text-gray-800 pt-8">
               Integrity
             </p>
-            <p className="text-gray-600 mt-2 text-lg lg:text-sm">
+            <p className="text-gray-600 mt-2 text-xs lg:text-sm">
               Transparency and honesty are fundamental to our operations,
               ensuring trust between all parties.
             </p>
