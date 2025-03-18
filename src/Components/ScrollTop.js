@@ -8,7 +8,7 @@ function ScrollTop() {
     window.scrollTo(0, 0); // Scroll to the top whenever the route changes
   }, [pathname]);
 
-  return null; // This component doesn't render anything
+  return
 }
 
 export default ScrollTop;

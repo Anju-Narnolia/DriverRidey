@@ -1,6 +1,6 @@
 import hero from "../Img/we-are.jpg";
 import mission from "../Img/mission.jpg";
-import problem from "../Img/problem solved.jpg";
+import problem from "../Img/problemsolved.jpg";
 import office from "../Img/business-executives-discussing.jpg";
 import us from "../Img/people-working-office.jpg";
 import React, { useEffect, useState } from "react";

@@ -20,7 +20,7 @@ function NavBar() {
         </div>
         <nav className="justify-center hidden md:flex">
           <ul className="flex flex-row items-center space-x-6 ">
-            <li className=" ">
+            <li className=" font-bold">
               <Link
                 to="/"
                 className={`${
@@ -30,7 +30,7 @@ function NavBar() {
                 Home
               </Link>
             </li>
-            <li className=" ">
+            <li className=" font-bold ">
               <Link
                 to="/about"
                 className={`${
@@ -42,7 +42,7 @@ function NavBar() {
                 About
               </Link>
             </li>
-            <li className="  : ">
+            <li className="   font-bold">
               <Link
                 to="/safety"
                 className={`${
@@ -54,7 +54,7 @@ function NavBar() {
                 Safety
               </Link>
             </li>
-            <li className="  : ">
+            <li className="   font-bold ">
               <Link
                 to="/career"
                 className={`${
@@ -66,7 +66,7 @@ function NavBar() {
                 Career
               </Link>
             </li>
-            <li className="  : ">
+            <li className="   font-bold ">
               <Link
                 to="/faq"
                 className={`${
@@ -76,7 +76,7 @@ function NavBar() {
                 FAQ
               </Link>
             </li>
-            <li className="  : ">
+            <li className="   font-bold ">
               <Link
                 to="/contact"
                 className={`${

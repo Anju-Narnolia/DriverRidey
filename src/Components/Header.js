@@ -1,7 +1,7 @@
 import heroPhoto from "../Img/hero.jpg";
 import drive from "../Img/women-key.jpg";
 import how from "../Img/how.jpg";
-import think from "../Img/driver thinking.jpg";
+import think from "../Img/driverthinking.jpg";
 // import Video from "../"
 import Review from "./Review";
 
