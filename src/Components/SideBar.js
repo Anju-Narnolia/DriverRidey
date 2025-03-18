@@ -160,7 +160,7 @@ function SideBar() {
   return (
     <div className="sidebar-container">
       <button
-        className="fixed top-4 right-4 z-50 p-2 rounded-full bg-driverGreen hover:bg-driverGreen/90 transition-all duration-300"
+        className=" bg-driverGreen hover:bg-driverGreen/90 transition-all duration-300"
         onClick={() => setIsOpen(!isOpen)}
         aria-label={isOpen ? "Close Menu" : "Open Menu"}
       >

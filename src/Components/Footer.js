@@ -8,7 +8,7 @@ function Footer() {
   return (
     <>
       <div className="bg-black text-white  md:p-5">
-        <div className="flex-col lg:flex-row flex justify-between gap-2 p-8">
+        <div className="flex-col lg:flex-row flex justify-between gap-5 p-8">
           {/* col1 */}
           <div className=" lg:w-1/5 flex flex-col lg:gap-5 items-center lg:items-start">
             <img className="w-60" src={logo} alt="logo" />
@@ -21,10 +21,10 @@ function Footer() {
           </div>
           {/* cpl2 */}
           <div className="items-center w-full lg:w-1/5 md:p-5">
-            <p className="font-bold font-serif lg:text-2xl md:text-2xl text-lg text-center mb-2 lg:mb-5">
+            <p className="font-bold mb-2 md:mb-4 text-center md:text-2xl text-lg relative after:content-[''] after:absolute after:w-[90px] after:h-[3px] after:bg-driverGreen after:-bottom-1 after:left-1/2 after:-translate-x-1/2">
               Download App
             </p>
-            <div className=" flex flex-row lg:flex-col gap-10 justify-center items-center">
+            <div className=" flex flex-row lg:flex-col gap-10 justify-center items-center pt-2">
               <a href="https://labs.google.com/search?source=ntp">
                 <img
                   className="w-40 md:w-50"
@@ -39,7 +39,10 @@ function Footer() {
           </div>
           {/* col3 */}
           <div className="lg:p-2 md:p-5 lg:w-1/6 ">
-            <p className="font-bold mb-2 md:mb-4 text-center lg:text-2xl md:text-2xl text-lg">
+            {/* <p className="font-bold mb-2 md:mb-4 text-center lg:text-2xl md:text-2xl text-lg">
+              Quick Links
+            </p> */}
+            <p className="font-bold mb-2 md:mb-4 text-center md:text-2xl text-lg relative after:content-[''] after:absolute after:w-[50px] after:h-[3px] after:bg-driverGreen after:-bottom-1 after:left-1/2 after:-translate-x-1/2">
               Quick Links
             </p>
             <ul className="flex justify-center gap-3 text-md md:text-lg lg:text-xl lg:flex-col text-center">
@@ -95,7 +98,7 @@ function Footer() {
           </div>
           {/* col4 */}
           <div className="lg:w-1/5 lg:p-5  flex flex-col  items-center">
-            <p className="lg:text-2xl md:text-2xl text-lg font-bold text-white text-center lg:text-start">
+            <p className="font-bold mb-2 md:mb-4 text-center md:text-2xl text-lg relative after:content-[''] after:absolute after:w-[90px] after:h-[3px] after:bg-driverGreen after:-bottom-1 after:left-1/2 after:-translate-x-1/2">
               Customer Support
             </p>
             <div className="flex flex-col gap-3">
@@ -142,9 +145,9 @@ function Footer() {
           <div className=" w-full lg:w-2/6 py-2 lg:py-5 sm:items-center">
             <div className="flex gap-2 justify-center">
               <i className="fa-solid fa-envelope text-driverGreen lg:text-3xl md:text-2xl text-xl"></i>
-              <h3 className="text-lg md:text-2xl lg:text-2xl font-bold">
+              <p className="font-bold mb-2 md:mb-4 text-center md:text-2xl text-lg relative after:content-[''] after:absolute after:w-[150px] after:h-[3px] after:bg-driverGreen after:-bottom-1 after:left-1/2 after:-translate-x-1/2">
                 Subscribe To Our Newsletter
-              </h3>
+              </p>
             </div>
             <p className="lg:my-5 mb-2 text-md  md:text-lg lg:text-xl text-gray-400 text-center">
               Subscribe now for news, updates, and exclusive offers in your

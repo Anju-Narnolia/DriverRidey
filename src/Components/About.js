@@ -84,16 +84,16 @@ function About() {
         </div>
 
         {/* mission */}
-        <div className="p-16 bg-white flex flex-col lg:flex-row items-center lg:justify-center gap-10">
-            <div class="relative lg:w-80 w-full">
+        <div className="lg:p-16 p-5 bg-white flex flex-row items-center lg:justify-center gap-10">
+            <div class="relative w-1/2">
                 <div class="absolute top-4 left-4 w-full h-full bg-gradient-to-br from-green-400 to-driverGreen rounded-lg"></div>
                 <img
                     src={mission}
                     alt="problem"
                     class="relative w-full h-80 object-cover rounded-lg shadow-lg" />
             </div>
-            <div className="md:w-3/4 lg:w-1/2 lg:text-left ">
-                <p className="text-lg md:text-xl lg:text-2xl font-medium text-gray-600 max-w-3xl mx-auto "><strong className="text-xl lg:text-2xl text-driverGreen">Our Mission</strong> is to simplify transportation for everyone. We aim to provide a reliable and user-friendly app that allows car owners to hire drivers based on proximity and specific trip requirements, ensuring a seamless travel experience.</p>
+            <div className="w-1/2 lg:text-left ">
+                <p className="text-md md:text-xl lg:text-2xl font-medium text-gray-600 max-w-3xl mx-auto "><strong className="text-xl lg:text-2xl text-driverGreen">Our Mission</strong> is to simplify transportation for everyone. We aim to provide a reliable and user-friendly app that allows car owners to hire drivers based on proximity and specific trip requirements, ensuring a seamless travel experience.</p>
             </div>
         </div>
 
