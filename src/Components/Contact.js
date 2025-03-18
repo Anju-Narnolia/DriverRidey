@@ -4,18 +4,16 @@ import contact from "../Img/contact.jpg";
 function Contact() {
   return (
     <>
-      <div>
+      <div className="mt-14">
         <div
-          className="p-10 bg-cover bg-center"
+          className="p-8 bg-cover bg-center"
           style={{
             background: `#f3f4f6 url(${contact}) center/cover no-repeat`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          {/* <link rel="preload" as="image" href={contact} /> */}
-          {/* Header */}
-          <div className="text-center">
+          <div className="text-center m-2 ">
             <h1 className="text-3xl md:text-5xl font-bold text-black p-4">
               Contact Us
             </h1>
@@ -24,7 +22,7 @@ function Contact() {
               feedback.
             </p>
           </div>
-          <div className="items-center m-5 md:m-10 flex flex-col lg:flex-row gap-10">
+          <div className="items-center md:m-10 flex flex-col lg:flex-row gap-10">
             <div className="w-full lg:w-1/2">
               <ContactForm />
             </div>

@@ -37,7 +37,7 @@
 //             </p>
 //             <li>
 //               <Link
-//                 to="/" 
+//                 to="/"
 //                 onClick={handelLinkClick}
 //                 className={`${
 //                   location.pathname === "/" ? "border-b-4 border-black" : ""
@@ -136,12 +136,12 @@ function SideBar() {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (isOpen && !event.target.closest('.sidebar-container')) {
+      if (isOpen && !event.target.closest(".sidebar-container")) {
         setIsOpen(false);
       }
     };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isOpen]);
 
   useEffect(() => {
@@ -164,7 +164,11 @@ function SideBar() {
         onClick={() => setIsOpen(!isOpen)}
         aria-label={isOpen ? "Close Menu" : "Open Menu"}
       >
-        <i className={`fa-solid ${isOpen ? "fa-xmark" : "fa-bars"} text-white text-2xl`}></i>
+        <i
+          className={`fa-solid ${
+            isOpen ? "fa-xmark" : "fa-bars"
+          } text-white text-2xl`}
+        ></i>
       </button>
       {isOpen && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40" />
@@ -190,10 +194,6 @@ function SideBar() {
                 {item.label}
               </Link>
             ))}
-            
-            <button className="mt-auto bg-white text-driverGreen hover:bg-gray-100 font-semibold rounded-lg px-6 py-3 transition duration-200">
-              Download App
-            </button>
           </div>
         </nav>
       </div>

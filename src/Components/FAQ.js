@@ -61,7 +61,7 @@ function FAQ() {
     },
   ];
   return (
-    <div>
+    <div className="mt-14">
       <div className=" relative flex justify-center items-center text-5xl">
         <img
           src={hh}
@@ -82,19 +82,24 @@ function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+              className="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow"
             >
               <button
                 className={`flex justify-between items-center w-full lg:px-6 lg:py-4 px-4 py-2 text-lg font-medium text-wrap ${
                   openIndex === index
                     ? "bg-driverGreen text-white"
-                    : "bg-gray-100 text-gray-800"
+                    : "bg-driverGreen/50 text-gray-800"
                 } transition`}
                 onClick={() => toggleFAQ(index)}
               >
                 {faq.question}
-                <span className={`text-xl ${openIndex === index ? " fa-solid fa-caret-up text-white" : "fa-solid fa-caret-down text-gray-800"}`}>
-                </span>
+                <span
+                  className={`text-xl ${
+                    openIndex === index
+                      ? " fa-solid fa-caret-up text-white"
+                      : "fa-solid fa-caret-down text-gray-800"
+                  }`}
+                ></span>
               </button>
               <motion.div
                 initial={{ height: 0, opacity: 0 }}

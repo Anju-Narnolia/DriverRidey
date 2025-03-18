@@ -10,7 +10,8 @@ function Safety() {
     setcurrentOwner(true);
   }
   return (
-    <>
+    
+    <div className="mt-14">
       <section className="p-5">
         <div className="flex justify-center space-x-6 my-5 lg:my-10">
           <button
@@ -117,7 +118,7 @@ function Safety() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 export default Safety;

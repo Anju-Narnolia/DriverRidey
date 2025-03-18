@@ -62,7 +62,7 @@ function Review() {
     const [currentCategory, setCurrentCategory] = useState('driver');
     const reviews = currentCategory === 'driver' ? driverReview : ownerReviews;
     return (
-        <div className="p-5 bg-gray-200">
+        <div className="p-8 bg-gray-200">
             <div>
                 <div className="flex justify-center space-x-4 mb-4">
                     <button

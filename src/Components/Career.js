@@ -2,7 +2,7 @@ import career from "../Img/career.jpg";
 
 function Career() {
   return (
-    <>
+    <div className="mt-14">
       {/* Hero Section */}
       <div
         className="relative w-full lg:h-[80vh] bg-gradient-to-r from-blue-500 via-teal-500 to-purple-500"
@@ -137,7 +137,7 @@ function Career() {
             <div className="mt-6 flex justify-center">
               <button
                 type="submit"
-                className="w-full    lg:w-1/2 bg-white text-driverGreen font-bold py-1 lg:py-2 px-4 rounded-lg hover:bg-green-900 hover:text-white focus:outline-none"
+                className="w-full lg:w-1/2 bg-white text-driverGreen font-bold py-1 lg:py-2 px-4 rounded-lg hover:border-white border-2 hover:bg-driverGreen  hover:text-white focus:outline-none"
               >
                 Submit
               </button>
@@ -145,7 +145,7 @@ function Career() {
           </form>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

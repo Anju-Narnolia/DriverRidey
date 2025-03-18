@@ -7,7 +7,7 @@ import Review from "./Review";
 
 function Header() {
   return (
-    <div>
+    <div className="mt-14">
       {/* <div class="relative w-full h-screen overflow-hidden">
                 <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover">
                     <source src="https://videocdn.cdnpk.net/videos/1d4c1162-3d5b-471d-bbdd-e175dd61539c/horizontal/previews/watermarked/large.mp4" type="video/mp4"/>
@@ -147,7 +147,7 @@ function Header() {
             <div className=" bg-gray-100 p-4 rounded-lg shadow-sm hover:shadow-lg transition">
               <i className="fa-solid fa-user-shield bg-driverGreen rounded-full px-3 py-3 border-2 border-white text-white  text-3xl lg:text-4xl hover:scale-105"></i>
               <div>
-              <span className="block text-xl lg:text-2xl font-bold text-gray-700">
+                <span className="block text-xl lg:text-2xl font-bold text-gray-700">
                   Verified Drivers
                 </span>
                 <p className="text-sm text-gray-800">
@@ -158,7 +158,7 @@ function Header() {
             <div className=" bg-gray-100 p-4 rounded-lg shadow-sm hover:shadow-lg transition">
               <i className="fa-solid fa-hand-holding-dollar bg-driverGreen rounded-full px-3 py-3 border-2 border-white text-white  text-3xl lg:text-4xl hover:scale-105"></i>
               <div>
-              <span className="block text-xl lg:text-2xl font-bold text-gray-700">
+                <span className="block text-xl lg:text-2xl font-bold text-gray-700">
                   Affordable Rates
                 </span>
                 <p className="text-sm text-gray-800">
@@ -169,7 +169,7 @@ function Header() {
             <div className=" bg-gray-100 p-4 rounded-lg shadow-sm hover:shadow-lg transition">
               <i className="fa-solid fa-check text-white bg-driverGreen rounded-full px-4 py-3 border-2 border-white text-3xl lg:text-4xl hover:scale-105"></i>
               <div>
-              <span className="block text-xl lg:text-2xl font-bold text-gray-700">
+                <span className="block text-xl lg:text-2xl font-bold text-gray-700">
                   Reliable Service
                 </span>
                 <p className="text-sm text-gray-800">
@@ -183,44 +183,44 @@ function Header() {
       </div>
 
       {/* Our Values */}
-      <div div className="py-16 bg-white text-center px-6 md:px-12">
-      <h2 className="lg:text-5xl md:text-4xl text-3xl font-bold text-center text-gray-800 lg:mb-8 m-5">
+      <div div className="py-16 bg-white px-6 md:px-12">
+        <h2 className="lg:text-5xl md:text-4xl text-3xl font-bold text-center text-gray-800 lg:mb-8 m-5">
           Our Values
         </h2>
-        <div className="mt-14 grid grid-cols-2 lg:grid-cols-4 gap-9 md:gap-10 lh:m-10 lg:m-3">
+        <div className="mt-14 grid grid-cols-2 lg:grid-cols-4 gap-12 lg:m-10 ">
           <div className=" relative bg-gray-50 p-6 rounded-xl shadow-lg border-2 border-driverGreen hover:scale-105 transform transition duration-[500ms]">
-            <div className="icon-container absolute -top-8 left-1/2 transform -translate-x-1/2 bg-white rounded-full p-4 border-2 border-driverGreen px-5">
-              <i className="fa-brands fa-accessible-icon text-driverGreen hover:rotate-360 text-2xl lg:text-4xl hover:text-green-600 hover:scale-105"></i>
+            <div className="icon-container absolute -top-8 left-1/2 transform -translate-x-1/2 bg-white rounded-full border-2 border-driverGreen px-4 py-3">
+              <i className="fa-brands fa-accessible-icon text-driverGreen text-2xl lg:text-4xl hover:text-green-600 hover:scale-105"></i>
             </div>
-            <p className="text-xl lg:text-2xl font-semibold text-gray-800 pt-8">
+            <p className="text-xl lg:text-2xl font-semibold text-gray-800 pt-3">
               Accessibility
             </p>
             <p className="text-gray-600 mt-2 text-xs lg:text-sm">
-               We believe everyone should have access to reliable transportation
+              We believe everyone should have access to reliable transportation
               options.
             </p>
           </div>
           <div className=" relative bg-gray-50 p-6 rounded-xl shadow-lg border-2 border-driverGreen hover:scale-105 transform transition duration-[500ms]">
-            <div className="icon-container absolute -top-8 left-1/2 transform -translate-x-1/2 bg-white rounded-full p-4 border-2 border-driverGreen px-5">
+            <div className="icon-container absolute -top-8 left-1/2 transform -translate-x-1/2 bg-white rounded-full px-4 border-2 border-driverGreen py-3">
               <i className="fa-solid fa-people-arrows text-driverGreen hover:rotate-360 text-2xl lg:text-4xl hover:text-green-600 hover:scale-105"></i>
             </div>
-            <p className="text-xl lg:text-2xl font-semibold text-gray-800 pt-8">
+            <p className="text-xl lg:text-2xl font-semibold text-gray-800 pt-3">
               Community Connection
             </p>
             <p className="text-gray-600 mt-2 text-xs lg:text-sm">
-              Our platform fosters relationships between car owners and drivers,
-              creating a supportive travel community.
+              We connect car owners and drivers, fostering a supportive travel
+              community.
             </p>
           </div>
           <div className=" relative bg-gray-50 pt-5 p-2 lg:p-6 rounded-xl shadow-lg border-2 border-driverGreen hover:scale-105 transform transition duration-[500ms]">
             <div className="icon-container absolute -top-8 left-1/2 transform -translate-x-1/2 bg-white rounded-full p-4 border-2 border-driverGreen px-5">
               <i className="fa-solid fa-chalkboard-user text-driverGreen hover:rotate-360 text-2xl lg:text-4xl hover:text-green-600 hover:scale-105"></i>
             </div>
-            <p className="text-xl lg:text-2xl font-semibold text-gray-800 pt-8">
+            <p className="text-xl lg:text-2xl font-semibold text-gray-800 pt-3">
               User-Centric Design
             </p>
             <p className="text-gray-600 mt-2 text-xs lg:text-sm">
-               We focus on creating a user-friendly app that caters to the
+              We focus on creating a user-friendly app that caters to the
               specific needs of our users.
             </p>
           </div>
@@ -228,7 +228,7 @@ function Header() {
             <div className="icon-container absolute -top-8 left-1/2 transform -translate-x-1/2 bg-white rounded-full p-4 border-2 border-driverGreen px-5">
               <i className="fa-solid fa-user-shield text-driverGreen hover:rotate-360 text-2xl lg:text-4xl hover:text-green-600 hover:scale-105"></i>
             </div>
-            <p className="text-xl lg:text-2xl font-semibold text-gray-800 pt-8">
+            <p className="text-xl lg:text-2xl font-semibold text-gray-800 pt-3">
               Integrity
             </p>
             <p className="text-gray-600 mt-2 text-xs lg:text-sm">

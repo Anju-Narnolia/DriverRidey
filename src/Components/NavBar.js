@@ -31,7 +31,7 @@ function NavBar() {
                 to="/"
                 className={`${
                   location.pathname === "/" ? "border-b-4 border-black" : ""
-                } "text-white hover:text-gray-200 transition-colors duration-200`}
+                } " text-white hover:text-gray-200 transition-colors duration-200`}
               >
                 Home
               </Link>
