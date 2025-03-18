@@ -88,7 +88,7 @@ function FAQ() {
                 className={`flex justify-between items-center w-full lg:px-6 lg:py-4 px-4 py-2 text-lg font-medium text-wrap ${
                   openIndex === index
                     ? "bg-driverGreen text-white"
-                    : "bg-driverGreen/50 text-gray-800"
+                    : "bg-driverGreen text-gray-800"
                 } transition`}
                 onClick={() => toggleFAQ(index)}
               >

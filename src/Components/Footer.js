@@ -125,7 +125,7 @@ function Footer() {
                   </p>
                 </div>
                 <Link to="tel:+919355090302" className="text-gray-400">
-                  +91 9355090302
+                  +91 (935)-(509)-(0302)
                 </Link>
               </div>
               <div>
