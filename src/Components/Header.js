@@ -39,9 +39,6 @@ function Header() {
             efficient, and secure way. Whether you're looking for a ride or
             ready to offer your driving services, we’ve got you covered.
           </p>
-          <button className="bg-black rounded-lg shadow-md shadow-black px-3 py-2">
-            Download App
-          </button>
         </div>
       </div>
       {/* how work */}
