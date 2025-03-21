@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import hh from "../Img/faq.jpg";
+// import hh from "../Img/faq.jpg";
 function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
   const toggleFAQ = (index) => {
@@ -61,21 +62,14 @@ function FAQ() {
     },
   ];
   return (
-    <div className="mt-14">
-      <div className=" relative flex justify-center items-center text-5xl">
-        <img
-          src={hh}
-          alt="we-are"
-          className="relative object-cover w-full lg:h-[80vh] md:h-[50vh]"
-        />
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4  bg-black bg-opacity-30">
-          <p className="lg:text-6xl text-3xl md:text-4xl  font-bold text-center">
-            Frequently Asked Questions
-          </p>
-          <p className="text-lg md:text-xl lg:text-2xl text-center w-2/3 p-2">
-            Got questions about DriverRidey? Find answers here or contact us!
-          </p>
-        </div>
+    <div className="mt-20 p-5">
+      <div className=" flex flex-col justify-center items-center text-center">
+        <p className="lg:text-6xl text-3xl md:text-4xl  font-bold text-center">
+          Frequently Asked Questions
+        </p>
+        <p className="text-lg md:text-xl lg:text-2xl text-center w-2/3 p-2">
+          Find answers to common questions about DriverRidey services.
+        </p>
       </div>
       <div className="items-center flex flex-col justify-center py-12">
         <div className="w-10/12 md:w-2/3 max-w-4xl space-y-4">
@@ -115,6 +109,19 @@ function FAQ() {
               </motion.div>
             </div>
           ))}
+        </div>
+      </div>
+      <div className="items-center flex flex-col justify-start gap-5 ">
+        <div className=" flex flex-col gap-2 w-2/3">
+          <p className="font-bold text-xl lg:text-3xl">Still Have Questions?</p>
+          <p className="text-lg lg:text-xl">Our support team is here to help you 24/7.</p>
+
+          <Link
+            to="/contact"
+            className="bg-driverGreen text-white px-3 py-2 font-bold rounded-3xl"
+          >
+            <i class="fa-regular fa-comment p-2 text-white"></i>Contact Support
+          </Link>
         </div>
       </div>
     </div>

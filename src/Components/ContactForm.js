@@ -10,7 +10,7 @@ function ContactForm() {
     }
 
     return (
-        <div className="rounded-lg shadow-md p-5 bg-gray-200 bg-opacity-40 border-driverGreen border-2 w-full">
+        <div className="rounded-lg shadow-xl shadow-gray-500 p-5 bg-opacity-40 border-driverGreen border-2 w-full">
             <form onSubmit={msgChange}>
                 <div className="text-center mb-4">
                     <h2 className="lg:text-3xl text-xl font-bold text-driverGreen">Contact Form</h2>
@@ -29,7 +29,7 @@ function ContactForm() {
                         id="name"
                         type="text"
                         placeholder="Your Name"
-                        className="block w-full rounded-lg border-gray-300 bg-gray-100  p-1 lg:p-2 focus:border-blue-500 focus:ring focus:ring-blue-200"
+                        className="focus:outline-driverGreen block w-full rounded-lg border-gray-300 bg-gray-100  p-1 lg:p-2  "
                         required
                     />
                 </div>
@@ -44,7 +44,7 @@ function ContactForm() {
                         id="email"
                         type="email"
                         placeholder="Your Email"
-                        className="block w-full rounded-lg border-gray-300 bg-gray-100 p-1 lg:p-2 focus:border-blue-500 focus:ring focus:ring-blue-200"
+                        className=" focus:outline-driverGreen block w-full rounded-lg border-gray-300 bg-gray-100 p-1 lg:p-2  "
                         required
                     />
                 </div>
@@ -59,7 +59,7 @@ function ContactForm() {
                         id="mobile"
                         type="tel"
                         placeholder="Your Mobile Number"
-                        className="block w-full rounded-lg border-gray-300 bg-gray-100 p-1 lg:p-2 focus:border-blue-500 focus:ring focus:ring-blue-200"
+                        className=" focus:outline-driverGreen block w-full rounded-lg border-gray-300 bg-gray-100 p-1 lg:p-2  "
                     />
                 </div>
                 <div className="mb-4">
@@ -73,7 +73,7 @@ function ContactForm() {
                         id="subject"
                         type="text"
                         placeholder="Your Subject"
-                        className="block w-full rounded-lg border-gray-300 bg-gray-100 p-1 lg:p-2 focus:border-driverGreen focus:ring focus:ring-driverGreen"
+                        className=" focus:outline-driverGreen block w-full rounded-lg border-gray-300 bg-gray-100 p-1 lg:p-2 "
                     />
                 </div>
                 <div className="mb-6">
@@ -86,14 +86,14 @@ function ContactForm() {
                     <textarea
                         id="message"
                         placeholder="Write Your Message Here"
-                        className="block w-full rounded-lg border-gray-300 bg-gray-100 p-1 lg:p-2 focus:border-driverGreen focus:ring focus:ring-driverGreen h-28 resize-none"
+                        className="focus:outline-driverGreen block w-full rounded-lg border-gray-300 bg-gray-100 p-1 lg:p-2 h-28 resize-none"
                         required
                     ></textarea>
                 </div>
                 <div>
                     <button
                         type="submit"
-                        className="w-full bg-driverGreen hover:bg-green-700 text-white font-bold rounded-lg py-2 px-4 transition duration-200"
+                        className="w-full hover:bg-white hover:text-driverGreen  text-white border-2 border-driverGreen bg-driverGreen font-bold rounded-lg py-2 px-4 transition duration-200"
                     >
                         Submit
                     </button>

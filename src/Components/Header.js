@@ -1,7 +1,6 @@
-import heroPhoto from "../Img/hero.jpg";
-import drive from "../Img/women-key.jpg";
-import how from "../Img/how.jpg";
-import think from "../Img/driverthinking.jpg";
+// import heroPhoto from "../Img/hero.jpg";
+// import drive from "../Img/women-key.jpg";
+// import how from "../Img/how.jpg";
 // import Video from "../"
 import Review from "./Review";
 
@@ -24,11 +23,11 @@ function Header() {
 
       <div
         className="w-full h-[50vh] lg:h-[80vh] relative"
-        style={{
-          backgroundImage: `url(${heroPhoto})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+        // style={{
+        //   backgroundImage: `url(${heroPhoto})`,
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        // }}
       >
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-6">
           <h1 className="font-bold lg:text-6xl  md:text-4xl text-3xl">
@@ -50,20 +49,20 @@ function Header() {
           <div className="lg:w-1/2 flex justify-center">
             <div className="relative w-full max-w-2xl">
               <div className="w-64 h-72 rounded-2xl border-4 border-driverGreen hidden lg:block">
-                <img
+                {/* <img
                   src={think}
                   loading="lazy"
                   alt="Rider"
                   className="w-full h-full object-cover rounded-xl"
-                />
+                /> */}
               </div>
               <div className="lg:absolute lg:top-32 lg:left-32 w-full lg:w-96 h-80 rounded-2xl border-4 border-driverGreen">
-                <img
+                {/* <img
                   src={how}
                   loading="lazy"
                   alt="Woman"
                   className="w-full h-full object-cover rounded-xl"
-                />
+                /> */}
               </div>
             </div>
           </div>
@@ -125,12 +124,12 @@ function Header() {
         </p>
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 lg:m-10 m-5 items-center">
-            <img
+            {/* <img
               src={drive}
               alt="Car"
               loading="lazy"
               className="rounded-md w-full"
-            />
+            /> */}
           </div>
           <div className="grid grid-cols-2 gap-5 lg:m-10 m-5">
             <div className=" bg-gray-100 p-4 rounded-lg shadow-sm hover:shadow-lg transition">
