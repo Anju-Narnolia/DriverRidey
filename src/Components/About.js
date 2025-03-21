@@ -1,8 +1,8 @@
-// import hero from "../Img/we-are.jpg";
 // import mission from "../Img/mission.jpg";
 // import problem from "../Img/problemsolved.jpg";
 // import office from "../Img/business-executives-discussing.jpg";
-// import us from "../Img/people-working-office.jpg";
+import us1 from "../Img/us1.png";
+import us2 from "../Img/us2.png";
 import React, { useEffect, useState } from "react";
 function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,32 +26,28 @@ function About() {
     return () => observer.disconnect();
   }, []);
   return (
-    <div className="mt-20">
-      {/* heroSection */}
-      <div className="relative bg-gradient-to-r from-blue-500 via-teal-500 to-purple-500 w-full">
-        {/* <img
-          src={hero}
-          alt="we-are"
-          className="relative object-cover opacity-70 w-full lg:h-[80vh] md:h-[50vh]"
-        /> */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4 ">
-          <h1 className="font-bold lg:text-6xl  md:text-4xl text-3xl">
-            Who We Are ?
-          </h1>
-          <p className="text-lg lg:text-3xl mt-4 w-3/4">
+    <div className="mt-28">
+      {/* About Section */}
+      <div className="grid-col-1 lg:grid-cols-2 grid items-center lg:m-10">
+        <div className="flex p-5">
+          <div className="flex flex-col gap-5">
+            <img src={us1} alt="us" className="rounded-s-full" />
+            <p className="bg-driverGreen/50 h-36 w-2/3 rounded-s-full justify-end "></p>
+          </div>
+          <div className="pt-6 flex flex-col gap-5">
+            <p className="bg-driverGreen/50 h-36 w-2/3 rounded-e-full"></p>
+            <img src={us2} alt="us" className="rounded-e-full" />
+          </div>
+        </div>
+        <div className="m-2 lg:p-8 flex flex-col gap-3 text-center">
+          <p className="text-3xl lg:text-5xl font-bold text-center">
+            Who We Are?
+          </p>
+          <p className="ext-lg  md:text-xl lg:text-2xl text-gray-800">
             Our user-friendly app connects car owners with nearby skilled
             drivers, providing convenient and reliable travel solutions for
             seamless journeys.
           </p>
-        </div>
-      </div>
-
-      {/* About Section */}
-      <div className="flex flex-col lg:flex-row items-center m-10">
-        <div className="lg:w-1/2 md:w-3/4 text-center lg:p-10">
-          {/* <img src={office} alt="j" className="rounded-md text-center" /> */}
-        </div>
-        <div className="lg:w-1/2 m-2 lg:p-5">
           <p className="text-lg  md:text-xl lg:text-2xl text-gray-800">
             <strong className="lg:text-2xl text-xl text-driverGreen">
               DriverRidey
@@ -124,7 +120,9 @@ function About() {
 
       {/* proble we solve */}
       <div className="p-5 pt-16 mr-2 lg:p-16">
-        <h1 className="text-driverGreen text-3xl md:text-4xl lg:text-5xl font-bold text-center m-2">The Problem We Solve </h1>
+        <h1 className="text-driverGreen text-3xl md:text-4xl lg:text-5xl font-bold text-center m-2">
+          The Problem We Solve{" "}
+        </h1>
         <div className="flex flex-row lg:items-center gap-2">
           <div className="w-1/2 flex-col">
             <p className="text-md md:text-xl lg:text-2xl text-black lg:m-5 justify-center lg:text-left max-w-3xl  lg:pl-2">
