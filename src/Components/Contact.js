@@ -32,12 +32,12 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="m-10 md:m-16 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="m-10 md:m-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="">
             <ContactForm />
           </div>
-          <div className=" bg-gray-200 rounded shadow-lg shadow-gray-500 items-center">
-            <img src={contact} alt="contact" className="w-full" />
+          <div className="  items-center">
+            <img src={contact} alt="contact" className="w-full rounded shadow-lg shadow-gray-500" />
           </div>
         </div>
       </div>

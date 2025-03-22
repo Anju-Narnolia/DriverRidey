@@ -6,39 +6,16 @@ import Review from "./Review";
 
 function Header() {
   return (
-    <div className="mt-14">
-      {/* <div class="relative w-full h-screen overflow-hidden">
-                <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover">
-                    <source src="https://videocdn.cdnpk.net/videos/1d4c1162-3d5b-471d-bbdd-e175dd61539c/horizontal/previews/watermarked/large.mp4" type="video/mp4"/>
-                      
-                </video>
-                <div class="relative z-10 flex items-center justify-center h-full text-white text-center flex-col"> <h1 className="font-bold text-5xl md:text-6xl leading-tight">
-                        Find Reliable Drivers at Your Fingertips!
-                    </h1>
-                    <p className="font-serif text-xl md:text-2xl mt-4 max-w-3xl mx-auto">
-                        Connecting people who need a ride with skilled drivers in an easy, efficient, and secure way. Whether you're looking for a ride or ready to offer your driving services, we’ve got you covered.
-                    </p>
-                </div>
-            </div> */}
-
-      <div
-        className="w-full h-[50vh] lg:h-[80vh] relative"
-        // style={{
-        //   backgroundImage: `url(${heroPhoto})`,
-        //   backgroundSize: "cover",
-        //   backgroundPosition: "center",
-        // }}
-      >
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-6">
-          <h1 className="font-bold lg:text-6xl  md:text-4xl text-3xl">
-            Find Reliable Drivers at Your Fingertips!
-          </h1>
-          <p className="text-lg lg:text-3xl mt-4 w-3/4">
-            Connecting people who need a ride with skilled drivers in an easy,
-            efficient, and secure way. Whether you're looking for a ride or
-            ready to offer your driving services, we’ve got you covered.
-          </p>
-        </div>
+    <div className="mt-24">
+      <div className="flex flex-col justify-center items-center text-center px-6">
+        <h1 className="font-bold lg:text-6xl  md:text-4xl text-3xl">
+          Find Reliable Drivers at Your Fingertips!
+        </h1>
+        <p className="text-lg lg:text-3xl mt-4 w-3/4">
+          Connecting people who need a ride with skilled drivers in an easy,
+          efficient, and secure way. Whether you're looking for a ride or ready
+          to offer your driving services, we’ve got you covered.
+        </p>
       </div>
       {/* how work */}
       <div className="py-16 px-4">

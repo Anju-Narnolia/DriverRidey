@@ -81,17 +81,17 @@ function FAQ() {
               <button
                 className={`flex justify-between items-center w-full lg:px-6 lg:py-4 px-4 py-2 text-lg font-medium text-wrap ${
                   openIndex === index
-                    ? "bg-driverGreen text-white"
-                    : "bg-driverGreen text-gray-800"
+                    ? "bg-driverGreen text-white font-extrabold"
+                    : "bg-driverGreen text-gray-200 font-normal"
                 } transition`}
                 onClick={() => toggleFAQ(index)}
               >
                 {faq.question}
                 <span
-                  className={`text-xl ${
+                  className={`text-xl pl-2 ${
                     openIndex === index
-                      ? " fa-solid fa-caret-up text-white"
-                      : "fa-solid fa-caret-down text-gray-800"
+                      ? " fa-solid fa-caret-up text-white font-extrabold"
+                      : "fa-solid fa-caret-down text-gray-200"
                   }`}
                 ></span>
               </button>

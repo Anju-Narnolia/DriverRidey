@@ -5,8 +5,8 @@ function Career() {
   return (
     <div className="mt-14 lg:mt-28">
       {/* Hero Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:p-10 p-10 h-[60vh] ">
-        <div className="flex flex-col justify-center items-center lg:p-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10">
+        <div className="flex flex-col justify-center items-center">
           <h1 className="font-bold text-3xl md:text-4xl lg:text-6xl leading-tight">
             Career Opportunities Await You!
           </h1>
@@ -16,33 +16,42 @@ function Career() {
             dedication of our team.
           </p>
         </div>
-        <div className="flex">
-          <div className="">
-            <img src={career1} alt="career" className="rounded-bl-full border-l-8 border-driverGreen" />
+        <div className="flex flex-wrap justify-center items-center">
+          <div className="w-1/2 max-w-md flex justify-end">
+            <img
+              src={career1}
+              alt="career"
+              className="rounded-bl-full border-l-8 border-driverGreen w-4/5"
+            />
           </div>
-          <div className="">
-            <img src={career2} alt="career" className="rounded-tr-full border-r-8 border-driverGreen" />
+          <div className="w-1/2 max-w-md">
+            <img
+              src={career2}
+              alt="career"
+              className="w-4/5 rounded-tr-full border-r-8 border-driverGreen "
+            />
           </div>
         </div>
       </div>
       <div className="bg-gray-200 lg:p-10 p-5">
-        <p className="font-bold text-4xl text-center">Why Join Us?</p>
-        <div className="grid grid-cols-3 gap-4 lg:gap-10 lg:m-10 my-5">
+        <p p className="font-bold text-4xl text-center">
+          Why Join Us?
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-10 lg:m-10 my-5">
           <div className="rounded-md shadow-xl hover:shadow-2xl p-5 flex flex-col items-center gap-2 bg-gray-100">
-            <i class="fa-solid fa-envelope text-2xl lg:text-4xl text-driverGreen bg-driverGreen/30 rounded-full p-5 m-3"></i>
+            <i className="fa-solid fa-envelope text-2xl lg:text-4xl text-driverGreen bg-driverGreen/30 rounded-full p-5 m-3"></i>
             <strong className="text-sm lg:text-lg">Flexible Hours</strong>
             <p className="text-center text-sm lg:text-lg">
               Choose when you want to work and maintain work-life balance.
             </p>
           </div>
           <div className="rounded-md shadow-xl hover:shadow-2xl p-5 flex flex-col items-center gap-2 bg-gray-100">
-            <i class="fa-solid fa-phone-volume text-2xl lg:text-4xl text-driverGreen bg-driverGreen/30 rounded-full p-5 m-3"></i>
-            <strong className="text-sm lg:text-lg"> Competitive Pay</strong>
+            <i className="fa-solid fa-phone-volume text-2xl lg:text-4xl text-driverGreen bg-driverGreen/30 rounded-full p-5 m-3"></i>
+            <strong className="text-sm lg:text-lg">Competitive Pay</strong>
             <p className="text-center text-sm lg:text-lg">
               Earn more with our industry-leading compensation package.
             </p>
           </div>
-
           <div className="rounded-md shadow-xl hover:shadow-2xl  flex flex-col items-center gap-2 bg-gray-100 p-5">
             <i class="fa-solid fa-location-dot text-2xl lg:text-4xl text-driverGreen bg-driverGreen/30 rounded-full py-5 px-6  m-3"></i>
             <strong className="text-sm lg:text-lg">Supportive Community</strong>
