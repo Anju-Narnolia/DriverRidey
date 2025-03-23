@@ -1,7 +1,17 @@
 import career1 from "../Img/career1.png";
 import career2 from "../Img/career2.png";
+import { useState, useRef } from "react";
 
 function Career() {
+  const [msg, setMsg] = useState("");
+  const formRef = useRef(null);
+  function msgChange(event) {
+    event.preventDefault();
+    setMsg(
+      "Thank you for your application! We’ll review it and get back to you soon."
+    );
+    formRef.current.reset();
+  }
   return (
     <div className="mt-14 lg:mt-28">
       {/* Hero Section */}
@@ -67,7 +77,7 @@ function Career() {
           <p className=" text-2xl  lg:text-3xl font-bold text-center mb-2 lg:mb-6">
             Apply Now
           </p>
-          <form className="">
+          <form onSubmit={msgChange} ref={formRef}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <div>
                 <label className="text-sm font-medium flex mb-1">
@@ -178,6 +188,9 @@ function Career() {
                 Submit
               </button>
             </div>
+            {msg && (
+              <p className="mt-4 text-center text-black font-semibold">{msg}</p>
+            )}
           </form>
         </div>
       </section>

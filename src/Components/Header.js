@@ -3,8 +3,8 @@ import hero2 from "../Img/hero2.png";
 import hero3 from "../Img/hero3.png";
 import grid2 from "../Img/grid2.png";
 import grid1 from "../Img/grid1.png";
-import grid3 from "../Img/whyUs.jpeg";
-import grid5 from "../Img/grid3.png";
+import grid3 from "../Img/company.png";
+import grid5 from "../Img/fuk.png";
 import grid4 from "../Img/grid4.png";
 import Review from "./Review";
 
@@ -147,9 +147,36 @@ function Header() {
         <p className="lg:text-5xl md:text-4xl text-3xl font-bold text-center text-gray-800 lg:mb-8 m-5">
           Why Choose Us
         </p>
-        <div className="flex flex-col lg:flex-row items-center justify-between ">
-          <div className="lg:w-1/2 lg:m-10 m-5 flex flex-col gap-3">
+        <div className="flex flex-col lg:flex-row justify-between ">
+          <div className="lg:w-1/2 lg:m-10 m-5 flex flex-row gap-3">
             {/* First child (aligned left) */}
+            <div className="flex-wrap justify-end">
+              <div className="relative">
+                <div className="absolute -top-2 lg:-top-4 -left-2 lg:-left-4 w-full h-full bg-gradient-to-br from-green-400 to-driverGreen rounded-b-[20px] rounded-t-[20px] lg:rounded-b-[40px] lg:rounded-t-[40px]"></div>
+                <img
+                  src={grid3}
+                  alt="Car"
+                  loading="lazy"
+                  className="rounded-bl-[20px] rounded-t-[20px] lg:rounded-bl-[40px] lg:rounded-t-[40px] w-full relative border-2 border-white"
+                />
+              </div>
+            </div>
+
+            {/* Second child (aligned right) */}
+            <div className="flex-wrap justify-end self-end">
+              <div className="relative ">
+                <div className="absolute top-2 lg:top-4 left-2 lg:left-4 w-full h-full bg-gradient-to-br from-green-400 to-driverGreen rounded-b-[20px] rounded-t-[20px] lg:rounded-b-[40px] lg:rounded-t-[40px]"></div>
+                <img
+                  src={grid5}
+                  alt="Car"
+                  loading="lazy"
+                  className="rounded-b-[20px] rounded-tr-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] w-full relative border-2 border-white"
+                />
+              </div>
+            </div>
+          </div>
+          {/* <div className="lg:w-1/2 lg:m-10 m-5 flex flex-row gap-3">
+            {/* First child (aligned left) 
             <div className="flex justify-start">
               <div className="relative w-2/3">
                 <div className="absolute -top-2 lg:-top-4 -left-2 lg:-left-4 w-full h-full bg-gradient-to-br from-green-400 to-driverGreen rounded-b-[20px] rounded-t-[20px] lg:rounded-b-[40px] lg:rounded-t-[40px]"></div>
@@ -157,12 +184,12 @@ function Header() {
                   src={grid3}
                   alt="Car"
                   loading="lazy"
-                  className="rounded-bl-[20px] rounded-t-[20px] lg:rounded-bl-[40px] lg:rounded-t-[40px] w-full relative border-2 border-whit"
+                  className="rounded-bl-[20px] rounded-t-[20px] lg:rounded-bl-[40px] lg:rounded-t-[40px] w-full relative border-2 border-white"
                 />
               </div>
             </div>
 
-            {/* Second child (aligned right) */}
+            {/* Second child (aligned right) 
             <div className="flex justify-end">
               <div className="relative w-2/3">
                 <div className="absolute top-2 lg:top-4 left-2 lg:left-4 w-full h-full bg-gradient-to-br from-green-400 to-driverGreen rounded-b-[20px] rounded-t-[20px] lg:rounded-b-[40px] lg:rounded-t-[40px]"></div>
@@ -170,11 +197,11 @@ function Header() {
                   src={grid5}
                   alt="Car"
                   loading="lazy"
-                  className="rounded-b-[20px] rounded-tr-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] w-full relative border-2 border-whit"
+                  className="rounded-b-[20px] rounded-tr-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] w-full relative border-2 border-white"
                 />
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-2 gap-5 lg:m-10 m-5">
             <div className=" bg-gray-100 p-4 rounded-lg shadow-sm hover:shadow-lg transition">

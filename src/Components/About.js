@@ -1,6 +1,6 @@
 // import mission from "../Img/mission.jpg";
 import problem from "../Img/problem.png";
-import colleague from "../Img/dr1.jpeg";
+import colleague from "../Img/grid3.png";
 import us1 from "../Img/us1.png";
 import us2 from "../Img/us2.png";
 import React, { useEffect, useState } from "react";
@@ -80,7 +80,7 @@ function About() {
 
       {/* big Image */}
       <div
-        className="relative w-full lg:h-[70vh] h-[50vh]  "
+        className="relative w-full lg:h-[80vh] h-[50vh]  "
         style={{
           backgroundImage: `url(${colleague})`,
           backgroundSize: "cover",
@@ -113,9 +113,9 @@ function About() {
       </div>
 
       {/* mission */}
-      <div className=" mt-10 text-center  bg-driverGreen/30">
-        <div className="text-md md:text-xl lg:text-2xl font-medium text-gray-700 max-w-3xl mx-auto py-16">
-          <p className="text-xl lg:text-4xl font-bold text-gray-800 p-5">
+      <div className=" mt-10 text-center  bg-driverGreen">
+        <div className="text-md md:text-xl lg:text-2xl font-medium text-white max-w-3xl mx-auto py-16">
+          <p className="text-xl lg:text-4xl font-bold p-5">
             Our Mission
           </p>
           <p>
@@ -131,7 +131,7 @@ function About() {
       <div className="pt-16 mr-2 lg:p-16 items-center m-5">
         <div className="flex flex-col lg:flex-row gap-2 ">
           <div className=" flex flex-col gap-2 lg:w-1/2">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-wrap lg:m-2">
+            <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold text-wrap lg:m-2">
               Smart Solutions for Car Owners, Empowering Opportunities for
               Drivers
             </h1>

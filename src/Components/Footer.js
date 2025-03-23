@@ -2,9 +2,34 @@ import { Link } from "react-router-dom";
 import GoogleStore from "../Img/play_store.svg";
 import AppStore from "../Img/app_store.svg";
 import logo from "../Img/logo-removebg-.png";
+import { useState, useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 function Footer() {
   const year = new Date().getFullYear();
+  const [msg, setMsg] = useState("");
+  const location = useLocation();
+  const formRef = useRef(null);
 
+  function validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+  function msgChange(event) {
+    event.preventDefault();
+    const email = formRef.current.email.value;
+    if (!validateEmail(email)) {
+      setMsg("Please enter a valid email address.");
+      return;
+    }
+
+    setMsg(
+      "Thank you for your application! We’ll review it and get back to you soon."
+    );
+    formRef.current.reset();
+  }
+  useEffect(() => {
+    setMsg("");
+  }, [location.pathname]);
   return (
     <>
       <div className="bg-black text-white md:p-5">
@@ -162,21 +187,30 @@ function Footer() {
               Subscribe now for news, updates, and exclusive offers in your
               inbox.
             </p>
-            <form action="#" method="" className="flex justify-center">
+            <form
+              action="#"
+              method=""
+              className="flex justify-center"
+              onSubmit={msgChange}
+              ref={formRef}
+            >
               <input
                 type="email"
                 name="email"
                 placeholder="Enter email to subscribe"
-                className=" px-2 md:px-4 lg:py-3 rounded-s-lg text-black w-3/4"
+                className=" px-2 md:px-4 lg:py-3 rounded-s-lg text-black w-3/4 border-driverGreen border-2"
               />
               <button
-                className="bg-driverGreen text-white font-bold lg:px-8 py-2 rounded-e-md w-1/3"
+                className="bg-driverGreen text-white font-bold lg:px-8 py-2 rounded-e-md w-1/3 hover:bg-green-900  border-driverGreen border-2"
                 type="submit"
                 value="Submit"
               >
                 Subscribe
               </button>
             </form>
+            {msg && (
+              <p className="mt-4 text-center text-white font-semibold">{msg}</p>
+            )}
             <div className="flex justify-center gap-10 text-2xl md:text-3xl pt-4 lg:p-5">
               <Link
                 to="https://www.linkedin.com/company/driverridey/?viewAsMember=true"
@@ -207,7 +241,7 @@ function Footer() {
             All rights reserved.
           </p>
           <div className="flex flex-row text-xs md:text-md lg:text-xl underline justify-center gap-2 lg:">
-            <Link to="/term-condition" className="hover:text-driverGreen">
+            <Link to="/terms-conditions" className="hover:text-driverGreen">
               Terms and Conditions
             </Link>
             |
