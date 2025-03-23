@@ -2,6 +2,7 @@
 import problem from "../Img/problem.png";
 import colleague from "../Img/grid3.png";
 import us1 from "../Img/us1.png";
+import mission from "../Img/DR.png";
 import us2 from "../Img/us2.png";
 import React, { useEffect, useState } from "react";
 function About() {
@@ -113,11 +114,19 @@ function About() {
       </div>
 
       {/* mission */}
-      <div className=" mt-10 text-center  bg-driverGreen">
-        <div className="text-md md:text-xl lg:text-2xl font-medium text-white max-w-3xl mx-auto py-16">
-          <p className="text-xl lg:text-4xl font-bold p-5">
-            Our Mission
-          </p>
+      <div className=" mt-10 text-center flex  ">
+        <div className="lg:w-1/2 items-center self-center">
+          <div class="relative mx-10 my-5">
+            <div class="absolute top-4 left-4 w-full h-full bg-gradient-to-br from-green-400 to-driverGreen rounded-lg"></div>
+            <img
+              src={mission}
+              alt="mission"
+              class="relative w-full h-96 object-cover rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+        <div className="text-md md:text-xl lg:text-2xl font-medium  max-w-3xl mx-auto p-10 items-center flex flex-col justify-center">
+          <p className="text-xl lg:text-4xl font-bold p-5">Our Mission</p>
           <p>
             At DriverRidey, we're committed to revolutionizing personal
             transportation by connecting professional drivers with car owners,
