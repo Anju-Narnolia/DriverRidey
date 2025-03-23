@@ -130,8 +130,8 @@ function About() {
       {/* problem we solve */}
       <div className="pt-16 mr-2 lg:p-16 items-center m-5">
         <div className="flex flex-col lg:flex-row gap-2 ">
-          <div className=" flex flex-col gap-2">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:m-2">
+          <div className=" flex flex-col gap-2 lg:w-1/2">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-wrap lg:m-2">
               Smart Solutions for Car Owners, Empowering Opportunities for
               Drivers
             </h1>
@@ -156,13 +156,15 @@ function About() {
               </div>
             </div>
           </div>
-          <div class="relative mx-10 my-5">
-            <div class="absolute top-4 left-4 w-full h-full bg-gradient-to-br from-green-400 to-driverGreen rounded-lg"></div>
-            <img
-              src={problem}
-              alt="problem"
-              class="relative w-full h-80 object-cover rounded-lg shadow-lg"
-            />
+          <div className="lg:w-1/2 items-center self-center">
+            <div class="relative mx-10 my-5">
+              <div class="absolute top-4 left-4 w-full h-full bg-gradient-to-br from-green-400 to-driverGreen rounded-lg"></div>
+              <img
+                src={problem}
+                alt="problem"
+                class="relative w-full h-96 object-cover rounded-lg shadow-lg"
+              />
+            </div>
           </div>
         </div>
       </div>

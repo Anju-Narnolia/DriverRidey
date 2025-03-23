@@ -8,7 +8,7 @@ function Footer() {
   return (
     <>
       <div className="bg-black text-white md:p-5">
-        <div className="flex lg:gap-5 items-center justify-center">
+        <div className="flex lg:flex-row flex-col lg:gap-5 items-center justify-center p-3">
           <img className="w-60" src={logo} alt="logo" />
           <div>
             <p className="text-gray-300 text-lg text-center lg:text-wrap">
