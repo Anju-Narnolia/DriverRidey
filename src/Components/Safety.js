@@ -20,7 +20,9 @@ function Safety() {
                 ? " bg-driverGreen text-white"
                 : "bg-gray-200"
             }`}
-          >Owner</button>
+          >
+            Owner
+          </button>
           <button
             onClick={handelDriver}
             className={`px-9 py-3  text-xl lg:text-2xl font-serif rounded-lg ${
@@ -63,42 +65,35 @@ function Safety() {
       <div className="items-center my-10">
         <div className=" items-center">
           <h3 className="text-2xl lg:text-3xl font-bold p-5 text-center">
-            Measures to ensure the well-being of both, our Owner and Driver.
+            Our Safety Measures
           </h3>
           <div className="grid grid-cols-2 lg:grid-cols-4">
-            <div className="flex items-start space-x-4 bg-driverGreen p-10">
-              <div>
-                <i className="fa-solid fa-headset text-3xl lg:text-6xl text-white"></i>
-                <h3 className="lg:text-xl text-2xl font-bold text-white">
-                  24 / 7 Support
-                </h3>
-                <p className="text-white text-xl lg:text-xs  mt-2">
-                  Round-the-clock emergency support for drivers and passengers.
-                </p>
-              </div>
+            <div className="flex flex-col items-start space-y-2 bg-driverGreen p-10">
+              <i className="fa-solid fa-headset text-3xl lg:text-6xl text-white"></i>
+              <h3 className="lg:text-xl text-2xl font-bold text-white">
+                24 / 7 Support
+              </h3>
+              <p className="text-white text-xl lg:text-xs mt-2">
+                Round-the-clock emergency support for drivers and passengers.
+              </p>
             </div>
-            <div className="flex items-start space-x-4 bg-driverGreen/80  p-10">
-              <div>
-                <i className="fa-solid fa-headset  text-6xl text-white"></i>
-                <h3 className="lg:text-xl text-2xl font-bold text-white">
-                  24 / 7 Support
-                </h3>
-                <p className="text-white text-xl lg:text-xs  mt-2">
-                  Round-the-clock emergency support for drivers and passengers.
-                </p>
-              </div>
+            <div className="flex flex-col items-start space-y-2  bg-driverGreen/80 p-10">
+              <i className="fa-solid fa-location-dot  text-6xl text-white"></i>
+              <h3 className="lg:text-xl text-2xl font-bold text-white">
+                Real-time Tracking
+              </h3>
+              <p className="text-white text-xl lg:text-xs  mt-2">
+                Monitor your journey with our advanced GPS tracking system.
+              </p>
             </div>
-
-            <div className="flex items-start space-x-4 lg:bg-driverGreen bg-driverGreen/80 p-10">
-              <div>
-                <i className="fa-solid fa-umbrella  text-6xl text-white"></i>
-                <h3 className="lg:text-xl text-2xl  font-bold text-white">
-                  Insurance Coverage
-                </h3>
-                <p className="text-white text-xl lg:text-xs  mt-2">
-                  Comprehensive insurance coverage for every ride.
-                </p>
-              </div>
+            <div className="flex flex-col items-start space-y-2 bg-driverGreen/80 lg:bg-driverGreen p-10">
+              <i className="fa-solid fa-umbrella  text-6xl text-white"></i>
+              <h3 className="lg:text-xl text-2xl  font-bold text-white">
+                Insurance Coverage
+              </h3>
+              <p className="text-white text-xl lg:text-xs  mt-2">
+                Comprehensive insurance coverage for every ride.
+              </p>
             </div>
             <div className="flex items-start space-x-4 lg:bg-driverGreen/80 bg-driverGreen p-10">
               <div>

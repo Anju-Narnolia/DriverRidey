@@ -114,14 +114,15 @@ function FAQ() {
       <div className="items-center flex flex-col justify-start gap-5 ">
         <div className=" flex flex-col gap-2 w-2/3">
           <p className="font-bold text-xl lg:text-3xl">Still Have Questions?</p>
-          <p className="text-lg lg:text-xl">Our support team is here to help you 24/7.</p>
-
-          <Link
-            to="/contact"
-            className="bg-driverGreen text-white px-3 py-2 font-bold rounded-3xl"
-          >
-            <i class="fa-regular fa-comment p-2 text-white"></i>Contact Support
-          </Link>
+          <p className="text-lg lg:text-xl">
+            Our support team is here to help you 24/7.
+          </p>
+          <button className="bg-driverGreen text-white px-3 py-2 font-bold rounded-3xl w-fit">
+            <Link to="/contact">
+              <i class="fa-regular fa-comment p-2 text-white"></i>Contact
+              Support
+              </Link>
+          </button>
         </div>
       </div>
     </div>

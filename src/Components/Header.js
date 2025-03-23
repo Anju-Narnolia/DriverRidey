@@ -1,51 +1,99 @@
-// import heroPhoto from "../Img/hero.jpg";
-// import drive from "../Img/women-key.jpg";
-// import how from "../Img/how.jpg";
-// import Video from "../"
+// import hero1 from "../Img/hero1.png";
+import hero2 from "../Img/hero2.png";
+import hero3 from "../Img/hero3.png";
+import grid2 from "../Img/grid2.png";
+import grid1 from "../Img/grid1.png";
+import grid3 from "../Img/whyUs.jpeg";
+import grid5 from "../Img/grid3.png";
+import grid4 from "../Img/grid4.png";
 import Review from "./Review";
 
 function Header() {
   return (
-    <div className="mt-24">
-      <div className="flex flex-col justify-center items-center text-center px-6">
-        <h1 className="font-bold lg:text-6xl  md:text-4xl text-3xl">
-          Find Reliable Drivers at Your Fingertips!
-        </h1>
-        <p className="text-lg lg:text-3xl mt-4 w-3/4">
-          Connecting people who need a ride with skilled drivers in an easy,
-          efficient, and secure way. Whether you're looking for a ride or ready
-          to offer your driving services, we’ve got you covered.
-        </p>
+    <div className="lg:mt-24">
+      <div className="p-10 items-center grid grid-cols-1 lg:grid-cols-2">
+        <div className="flex items-center justify-center my-10 gap-1 p-5">
+          <div className="flex flex-col gap-6">
+            <div className="relative">
+              <div class="absolute top-4 -left-4 w-full h-full bg-gradient-to-br from-green-400 to-driverGreen rounded-lg rounded-l-[70px] rounded-br-[70px]"></div>
+              <img
+                src={hero2}
+                alt="hero1"
+                className="rounded-l-[70px] rounded-br-[70px] z-10 relative border-2 border-white"
+              />
+            </div>
+            <div className="h-20 bg-driverGreen/70 rounded-l-[70px] rounded-tr-[70px]"></div>
+          </div>
+          <div className="flex flex-col gap-2">
+            <div className=" h-20 bg-driverGreen/70 rounded-t-[70px] rounded-br-[70px] "></div>
+            <div className="relative">
+              <div class="absolute top-4 left-4 w-full h-full bg-gradient-to-br from-green-400 to-driverGreen rounded-lg rounded-b-[70px] rounded-tr-[70px]"></div>
+              <img
+                src={hero3}
+                alt="hero2"
+                className="rounded-b-[70px] rounded-tr-[70px] h-1/4 z-10 relative border-2 border-white"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center items-center text-center ">
+          <h1 className="font-bold lg:text-6xl  md:text-4xl text-3xl">
+            Seamless Rides, Anytime, Anywhere
+          </h1>
+          {/* <h1 className="font-bold lg:text-6xl  md:text-4xl text-3xl">
+            Find Reliable Drivers at Your Fingertips!
+          </h1> */}
+          <p className="text-lg lg:text-3xl mt-4 w-3/4">
+            Experience hassle-free travel with our professional drivers. We
+            handle the wheel while you focus on what matters.
+          </p>
+          <p className="text-lg lg:text-2xl mt-4 w-3/4">
+            <strong className="text-driverGreen">DriverRidey</strong>
+            connects people who need a ride with skilled drivers in an easy,
+            efficient, and secure way. Whether you're looking for a ride or
+            ready to offer your driving services, we’ve got you covered.
+          </p>
+        </div>
       </div>
       {/* how work */}
       <div className="py-16 px-4">
-        <p className="lg:text-5xl text-3xl md:text-4xl font-bold mb-12 text-gray-800 text-center">
+        <p className="lg:text-5xl text-3xl md:text-4xl font-bold text-gray-800 text-center">
           How It Works
         </p>
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 justify-between">
-          <div className="lg:w-1/2 flex justify-center">
-            <div className="relative w-full max-w-2xl">
-              <div className="w-64 h-72 rounded-2xl border-4 border-driverGreen hidden lg:block">
-                {/* <img
-                  src={think}
-                  loading="lazy"
-                  alt="Rider"
-                  className="w-full h-full object-cover rounded-xl"
-                /> */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 justify-between lg:m-5">
+          <div className="flex m-5 gap-5">
+            <div className="">
+              <div className="relative">
+                <div class="absolute top-2 lg:top-4 left-2 lg:left-4 w-full h-full bg-gradient-to-br from-green-400 to-driverGreen rounded-b-[50px] rounded-t-[50px] lg:rounded-b-[70px] lg:rounded-t-[70px]"></div>
+                <img
+                  src={grid2}
+                  alt="grid"
+                  className="relative rounded-b-[50px] rounded-t-[50px] border-2 border-white lg:rounded-b-[70px] lg:rounded-t-[70px]"
+                />
               </div>
-              <div className="lg:absolute lg:top-32 lg:left-32 w-full lg:w-96 h-80 rounded-2xl border-4 border-driverGreen">
-                {/* <img
-                  src={how}
-                  loading="lazy"
-                  alt="Woman"
-                  className="w-full h-full object-cover rounded-xl"
-                /> */}
+            </div>
+            <div className="flex flex-col gap-5">
+              <div className="relative">
+                <div class="absolute top-2 lg:top-4 left-2  lg:left-4 w-full h-full bg-gradient-to-br from-green-400 to-driverGreen rounded-b-[30px] rounded-t-[30px] lg:rounded-b-[50px] lg:rounded-t-[50px]"></div>
+                <img
+                  src={grid4}
+                  alt="grid"
+                  className="relative rounded-b-[30px] border-2 border-white rounded-t-[30px] lg:rounded-b-[50px] lg:rounded-t-[50px]"
+                />
+              </div>
+              <div className="relative">
+                <div class="absolute top-2 lg:top-4 left-2  lg:left-4 w-full h-full bg-gradient-to-br from-green-400 to-driverGreen rounded-b-[30px] rounded-t-[30px] lg:rounded-b-[50px] lg:rounded-t-[50px]"></div>
+                <img
+                  src={grid1}
+                  alt="grid"
+                  className="relative rounded-b-[30px] border-2 border-white rounded-t-[30px] lg:rounded-b-[50px] lg:rounded-t-[50px]"
+                />
               </div>
             </div>
           </div>
 
           {/* Steps Section */}
-          <div className="lg:w-1/2 flex flex-col ml-10 mt-5">
+          <div className=" flex flex-col ml-10 mt-5">
             {[
               {
                 step: 1,
@@ -95,19 +143,39 @@ function Header() {
       </div>
 
       {/* why us */}
-      <div className="p-5 lg:p-10">
+      <div className="p-5 lg:p-10 items-center">
         <p className="lg:text-5xl md:text-4xl text-3xl font-bold text-center text-gray-800 lg:mb-8 m-5">
           Why Choose Us
         </p>
-        <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-1/2 lg:m-10 m-5 items-center">
-            {/* <img
-              src={drive}
-              alt="Car"
-              loading="lazy"
-              className="rounded-md w-full"
-            /> */}
+        <div className="flex flex-col lg:flex-row items-center justify-between ">
+          <div className="lg:w-1/2 lg:m-10 m-5 flex flex-col gap-3">
+            {/* First child (aligned left) */}
+            <div className="flex justify-start">
+              <div className="relative w-2/3">
+                <div className="absolute -top-2 lg:-top-4 -left-2 lg:-left-4 w-full h-full bg-gradient-to-br from-green-400 to-driverGreen rounded-b-[20px] rounded-t-[20px] lg:rounded-b-[40px] lg:rounded-t-[40px]"></div>
+                <img
+                  src={grid3}
+                  alt="Car"
+                  loading="lazy"
+                  className="rounded-bl-[20px] rounded-t-[20px] lg:rounded-bl-[40px] lg:rounded-t-[40px] w-full relative border-2 border-whit"
+                />
+              </div>
+            </div>
+
+            {/* Second child (aligned right) */}
+            <div className="flex justify-end">
+              <div className="relative w-2/3">
+                <div className="absolute top-2 lg:top-4 left-2 lg:left-4 w-full h-full bg-gradient-to-br from-green-400 to-driverGreen rounded-b-[20px] rounded-t-[20px] lg:rounded-b-[40px] lg:rounded-t-[40px]"></div>
+                <img
+                  src={grid5}
+                  alt="Car"
+                  loading="lazy"
+                  className="rounded-b-[20px] rounded-tr-[20px] lg:rounded-b-[40px] lg:rounded-tr-[40px] w-full relative border-2 border-whit"
+                />
+              </div>
+            </div>
           </div>
+
           <div className="grid grid-cols-2 gap-5 lg:m-10 m-5">
             <div className=" bg-gray-100 p-4 rounded-lg shadow-sm hover:shadow-lg transition">
               <i className="fa-solid fa-clock-rotate-left bg-driverGreen rounded-full px-4 py-3 border-2 border-white text-white  text-3xl lg:text-4xl hover:scale-105 m-2"></i>

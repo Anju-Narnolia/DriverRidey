@@ -7,10 +7,19 @@ function Footer() {
 
   return (
     <>
-      <div className="bg-black text-white  md:p-5">
-        <div className="flex-col lg:flex-row flex justify-between gap-5 p-8">
+      <div className="bg-black text-white md:p-5">
+        <div className="flex lg:gap-5 items-center justify-center">
+          <img className="w-60" src={logo} alt="logo" />
+          <div>
+            <p className="text-gray-300 text-lg text-center lg:text-wrap">
+              Your trusted ride, anytime. Connecting owners with professional
+              drivers effortlessly.
+            </p>
+          </div>
+        </div>
+        <div className="flex-col lg:flex-row flex justify-between gap-5 p-3">
           {/* col1 */}
-          <div className=" lg:w-1/5 flex flex-col lg:gap-5 items-center lg:items-start">
+          {/* <div className=" lg:w-1/5 flex flex-col lg:gap-5 items-center lg:items-start">
             <img className="w-60" src={logo} alt="logo" />
             <div>
               <p className="text-gray-300 text-lg text-center lg:text-wrap">
@@ -18,7 +27,7 @@ function Footer() {
                 drivers effortlessly.
               </p>
             </div>
-          </div>
+          </div> */}
           {/* cpl2 */}
           <div className="items-center w-full lg:w-1/5 md:p-5">
             <p className="font-bold mb-2 md:mb-4 text-center md:text-2xl text-lg relative after:content-[''] after:absolute after:w-[90px] after:h-[3px] after:bg-driverGreen after:-bottom-1 after:left-1/2 after:-translate-x-1/2">
@@ -192,7 +201,7 @@ function Footer() {
           {/* mergo-mail and google sheet will used to subscription handle */}
         </div>
         <hr className="border-gray-700 p-2" />
-        <div className="text-center lg:p-5 gap-2 lg:flex justify-center">
+        <div className="text-center lg:p-5 gap-2 lg:flex justify-between">
           <p className="text-xs md:text-md lg:text-xl">
             Copyright © {year} <span className="font-bold">DriverRidey</span>.
             All rights reserved.

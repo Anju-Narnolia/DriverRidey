@@ -118,10 +118,12 @@ function About() {
           <p className="text-xl lg:text-4xl font-bold text-gray-800 p-5">
             Our Mission
           </p>
-          <p>At DriverRidey, we're committed to revolutionizing personal
-          transportation by connecting professional drivers with car owners,
-          creating opportunities and ensuring safe, reliable journeys for
-          everyone.</p>
+          <p>
+            At DriverRidey, we're committed to revolutionizing personal
+            transportation by connecting professional drivers with car owners,
+            creating opportunities and ensuring safe, reliable journeys for
+            everyone.
+          </p>
         </div>
       </div>
 
@@ -130,7 +132,8 @@ function About() {
         <div className="flex flex-col lg:flex-row gap-2 ">
           <div className=" flex flex-col gap-2">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center lg:m-2">
-              The Problem We Solve
+              Smart Solutions for Car Owners, Empowering Opportunities for
+              Drivers
             </h1>
             <div className="flex justify-start items-start gap-5 p-5">
               <i class="fa-solid fa-circle-radiation text-2xl lg:text-3xl text-driverGreen bg-driverGreen/30 rounded-full px-4 py-3"></i>
