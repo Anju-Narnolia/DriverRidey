@@ -114,8 +114,10 @@ function About() {
       </div>
 
       {/* mission */}
-      <div className=" mt-10 text-center flex  ">
-        <div className="lg:w-1/2 items-center self-center">
+      <div
+        className=" mt-10 text-center flex flex-col lg:flex-row"
+      >
+        <div className="lg:w-1/2 items-center self-center ">
           <div class="relative mx-10 my-5">
             <div class="absolute top-4 left-4 w-full h-full bg-gradient-to-br from-green-400 to-driverGreen rounded-lg"></div>
             <img
